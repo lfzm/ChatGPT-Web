@@ -11,8 +11,8 @@ export default {
     failed: '操作失败',
   },
   chat: {
-    placeholder: '来说点什么...（Shift + Enter = 换行）',
-    placeholderMobile: '来说点什么...',
+    placeholder: '输入你要咨询的问题...（Shift + Enter = 换行）',
+    placeholderMobile: '输入你要咨询的问题...',
     copy: '复制',
     copied: '复制成功',
     copyCode: '复制代码',
