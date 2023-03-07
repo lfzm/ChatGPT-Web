@@ -16,7 +16,7 @@ export function defaultSetting(): UserState {
   return {
     userInfo: {
       avatar: 'http://staticfile.yueshixi.com/kzvsl-logo.png',
-      name: '职校网-AI升学咨询(测试版)',
+      name: '职校网-AI升学咨询',
       description: ' <a href="https://m.zhixiaowang.com.cn" class="text-blue-500" target="_blank" >zhixiaowang.com.cn</a>',
     },
   }
