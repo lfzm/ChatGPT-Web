@@ -12,11 +12,11 @@ defineProps<Props>()
 </script>
 
 <template>
+ 
   <template v-if="image">
-    <NAvatar round :src="defaultAvatar" />
-  </template>
-  <template v-else>
     <NAvatar round :src="UserAvatar" />  
   </template>
-
+  <template v-else>
+    <NAvatar round :src="defaultAvatar" />
+  </template>
 </template>
