@@ -51,6 +51,13 @@ function handleReload() {
             <General v-if="!reload" @update="handleReload" />
           </div>
         </NTabPane>
+				<NTabPane name="Config" tab="Config">
+          <template #tab>
+            <SvgIcon class="text-lg" icon="ri:list-settings-line" />
+            <span class="ml-2">{{ $t('setting.config') }}</span>
+          </template>
+          <About />
+        </NTabPane>
       </NTabs>
     </NCard>
   </NModal>
