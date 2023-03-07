@@ -4,6 +4,7 @@ import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
 import { isString } from '@/utils/is'
 import defaultAvatar from '@/assets/avatar.jpg'
+import UserAvatar from '@/assets/img_head.png'
 
 interface Props {
   image?: boolean
@@ -20,7 +21,7 @@ const avatar = computed(() => userStore.userInfo.avatar)
     <NAvatar round :src="defaultAvatar" />
   </template>
   <template v-else>
-    <NAvatar round :src="http://staticfile.yueshixi.com/kzvsl-logo.png" />  
+    <NAvatar round :src="UserAvatar" />  
   </template>
 
 </template>
