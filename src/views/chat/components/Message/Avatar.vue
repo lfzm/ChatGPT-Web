@@ -16,12 +16,11 @@ const avatar = computed(() => userStore.userInfo.avatar)
 </script>
 
 <template>
-  <template  v-if="image" >
+  <template v-if="image">
     <NAvatar round :src="defaultAvatar" />
   </template>
   <template v-else>
-    <NAvatar v-if="isString(avatar) && avatar.length > 0" :src="avatar" :fallback-src="defaultAvatar" />
-    <NAvatar v-else round :src="defaultAvatar" />
+    <NAvatar round :src="http://staticfile.yueshixi.com/kzvsl-logo.png" />  
   </template>
 
 </template>
