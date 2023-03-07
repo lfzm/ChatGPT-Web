@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
-import { useUserStore } from '@/store'
-import { isString } from '@/utils/is'
 import defaultAvatar from '@/assets/avatar.jpg'
 import UserAvatar from '@/assets/img_head.png'
 
@@ -11,9 +9,7 @@ interface Props {
 }
 defineProps<Props>()
 
-const userStore = useUserStore()
 
-const avatar = computed(() => userStore.userInfo.avatar)
 </script>
 
 <template>
